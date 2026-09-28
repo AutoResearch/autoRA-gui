@@ -5,12 +5,12 @@ Thank you for your interest in contributing to autora_gui! As a contributor, you
 
 ## Repository Information
 
-- **Main Repository**: `https://github.com/ssec-jhu/base-template`
+- **Main Repository**: `https://github.com/autoresearch/autora-gui`
 
 ## How to Fork the Repository
 
 1. **Go to the Repository on GitHub**:
-   - Open your web browser and navigate to the main repository you want to fork. For this project, the URL is `https://github.com/ssec-jhu/base-template`.
+   - Open your web browser and navigate to the main repository you want to fork. For this project, the URL is `https://github.com/autoresearch/autora-gui`.
 
 2. **Click the Fork Button**:
    - In the upper-right corner of the repository page, you’ll see a button labeled **Fork**. Click it. 
@@ -19,7 +19,7 @@ Thank you for your interest in contributing to autora_gui! As a contributor, you
 3. **Clone Your Fork Locally**:
    - Once your fork is created, you can clone it to your local machine to start working:
    ```bash
-   git clone https://github.com/your-username/base-template
+   git clone https://github.com/your-username/autora-gui
    cd <repo dir>
    ```
 
@@ -33,7 +33,7 @@ You now have your own copy (fork) of the repository where you can make changes i
 
 2. **Add the Main Repository as Upstream**: To keep your fork in sync with the latest updates from the main repo, add it as a second remote named `upstream`:
    ```bash
-   git remote add upstream https://github.com/ssec-jhu/base-template
+   git remote add upstream https://github.com/autoresearch/autora-gui
    ```
 
 3. **Create a Branch**: Create a new branch for each feature or bug fix:
@@ -76,7 +76,7 @@ When you’re ready to contribute your changes:
 3. **Open a Pull Request**:
    - Go to your forked repository on GitHub.
    - Click on **New Pull Request**.
-   - Ensure the base repository is `https://github.com/ssec-jhu/base-template` and the base branch is `main`.
+   - Ensure the base repository is `https://github.com/autoresearch/autora-gui` and the base branch is `main`.
    - Provide a title and description for your pull request.
    - Submit the pull request for review.
 

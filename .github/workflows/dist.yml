@@ -31,7 +31,7 @@ jobs:
   # https://pypi.org/manage/account/publishing/. Fill in the fields as follows:
   #
   # * PyPI Project Name: name of pypi package
-  # * Owner: org, e.g. ssec-jhu
+  # * Owner: org, e.g. autoresearch
   # * Repository name: name of repo not-including org, e.g. autoRA-gui
   # * Workflow name: dist.yml
   # * Environment name: testpypi (for TestPyPI) or pypi (for PyPI)

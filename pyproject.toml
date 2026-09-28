@@ -33,9 +33,9 @@ docs = [
 ]
 
 [project.urls]
-homepage = "https://github.com/ssec-jhu/autoRA-gui"
-documentation = "https://github.com/ssec-jhu/autoRA-gui"
-repository = "https://github.com/ssec-jhu/autoRA-gui"
+homepage = "https://github.com/autoresearch/autoRA-gui"
+documentation = "https://github.com/autoresearch/autoRA-gui"
+repository = "https://github.com/autoresearch/autoRA-gui"
 
 [build-system]
 requires = ["setuptools>=84.0.0", "setuptools_scm[toml]>=10.2.1"]
