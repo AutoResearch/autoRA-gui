@@ -99,16 +99,15 @@ npm install
 
 The editor has two processes: the FastAPI backend and the React front-end.
 
-  * Activate your environment and ``cd`` into the front-end directory:
+  * Activate your environment:
     ```bash
     conda activate autora_gui
-    cd autora_gui/react_app
     ```
   * Start the backend API:
     ```bash
-    uvicorn server:app --reload --port 8000
+    python autora_gui/react_app/server.py
     ```
-  * In a second terminal, start the front-end dev server:
+  * In a second terminal, ``cd`` into the front-end directory and start the front-end dev server:
     ```bash
     cd autora_gui/react_app
     npm run dev
