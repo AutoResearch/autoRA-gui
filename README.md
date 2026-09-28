@@ -49,6 +49,8 @@ conda activate autora_gui
 pip install -e ".[dev]"
 
 # 4. Start the FastAPI backend (from the react_app directory)
+python autora_gui/react_app/server.py
+or:
 cd autora_gui/react_app
 uvicorn server:app --reload --port 8000
 
