@@ -1,14 +1,14 @@
-# SSEC-JHU autora_gui
+# autoresearch autora_gui
 
-[![CI](https://github.com/ssec-jhu/autoRA-gui/actions/workflows/ci.yml/badge.svg)](https://github.com/ssec-jhu/autoRA-gui/actions/workflows/ci.yml)
-[![Docs](https://github.com/ssec-jhu/autoRA-gui/actions/workflows/deploy-pages.yml/badge.svg)](https://ssec-jhu.github.io/autoRA-gui)
-[![codecov](https://codecov.io/gh/ssec-jhu/autoRA-gui/branch/main/graph/badge.svg?token=Ry6ZXSfGa3)](https://codecov.io/gh/ssec-jhu/autoRA-gui)
-[![Security](https://github.com/ssec-jhu/autoRA-gui/actions/workflows/security.yml/badge.svg)](https://github.com/ssec-jhu/autoRA-gui/actions/workflows/security.yml)
+[![CI](https://github.com/autoresearch/autoRA-gui/actions/workflows/ci.yml/badge.svg)](https://github.com/autoresearch/autoRA-gui/actions/workflows/ci.yml)
+[![Docs](https://github.com/autoresearch/autoRA-gui/actions/workflows/deploy-pages.yml/badge.svg)](https://autoresearch.github.io/autoRA-gui)
+[![codecov](https://codecov.io/gh/autoresearch/autoRA-gui/branch/main/graph/badge.svg?token=Ry6ZXSfGa3)](https://codecov.io/gh/autoresearch/autoRA-gui)
+[![Security](https://github.com/autoresearch/autoRA-gui/actions/workflows/security.yml/badge.svg)](https://github.com/autoresearch/autoRA-gui/actions/workflows/security.yml)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21515099.svg)](https://doi.org/10.5281/zenodo.21515099)
 [![PyPI](https://img.shields.io/pypi/v/autora-gui.svg)](https://pypi.org/project/autora-gui/)
 
 
-![SSEC-JHU Logo](docs/_static/SSEC_logo_horiz_blue_1152x263.png)
+![autoresearch Logo](docs/_static/SSEC_logo_horiz_blue_1152x263.png)
 
 **autora-gui** is a browser-based, visual workflow editor for
 [AutoRA](https://autoresearch.github.io/autora/) (Automated Research Assistant). It lets you
@@ -20,7 +20,7 @@ The editor is served by a [FastAPI](https://fastapi.tiangolo.com/) backend that 
 schema definitions from `autora_gui/JSON/`, with a [React](https://react.dev/) front-end
 (`autora_gui/react_app`). A live, self-contained build is deployed to GitHub Pages:
 
-**🔗 Live demo: https://ssec-jhu.github.io/autoRA-gui**
+**🔗 Live demo: https://autoresearch.github.io/autoRA-gui**
 
 ## Repository layout
 
@@ -38,7 +38,7 @@ schema definitions from `autora_gui/JSON/`, with a [React](https://react.dev/) f
 
 ```bash
 # 1. Clone the repository
-git clone git@github.com:ssec-jhu/autoRA-gui.git
+git clone git@github.com:autoresearch/autoRA-gui.git
 cd autoRA-gui
 
 # 2. Create and activate a conda environment
@@ -58,7 +58,7 @@ npm run dev
 ```
 
 The editor is then available at **http://localhost:3000** (the front-end talks to the backend on
-port 8000). Prefer no local setup at all? Use the [live demo](https://ssec-jhu.github.io/autoRA-gui).
+port 8000). Prefer no local setup at all? Use the [live demo](https://autoresearch.github.io/autoRA-gui).
 
 ---
 
@@ -123,8 +123,8 @@ To produce the single-file, self-contained build (the one deployed to GitHub Pag
 
 The repository ships a [`Dockerfile`](Dockerfile) that installs the production dependencies
 (``requirements/prd.txt``) and serves the FastAPI backend. On every push, CI builds this image and
-publishes it to the GitHub Container Registry at ``ghcr.io/ssec-jhu/autora-gui``
-(see [ci.yml](https://github.com/ssec-jhu/autoRA-gui/blob/main/.github/workflows/ci.yml)).
+publishes it to the GitHub Container Registry at ``ghcr.io/autoresearch/autora-gui``
+(see [ci.yml](https://github.com/autoresearch/autoRA-gui/blob/main/.github/workflows/ci.yml)).
 
 ### Build
 
@@ -141,11 +141,11 @@ publishes it to the GitHub Container Registry at ``ghcr.io/ssec-jhu/autora-gui``
     The backend API is then available at http://localhost:8000.
   * Alternatively, pull the pre-built image from the registry, e.g.:
     ```bash
-    docker pull ghcr.io/ssec-jhu/autora-gui:main
+    docker pull ghcr.io/autoresearch/autora-gui:main
     ```
 
 The container serves the backend API only; the React front-end is built and served separately (see
-[Run with Python](#run-with-python) or the [live demo](https://ssec-jhu.github.io/autoRA-gui)).
+[Run with Python](#run-with-python) or the [live demo](https://autoresearch.github.io/autoRA-gui)).
 
 ---
 
@@ -156,7 +156,7 @@ _NOTE: The following steps require ``pip install -r requirements/dev.txt``._
 ## Using tox
 
 Tox runs each check in its own isolated virtual environment, matching the CI on GitHub Actions
-(see [ci.yml](https://github.com/ssec-jhu/autoRA-gui/blob/main/.github/workflows/ci.yml)).
+(see [ci.yml](https://github.com/autoresearch/autoRA-gui/blob/main/.github/workflows/ci.yml)).
 
 * Run the full suite (style, security, tests, docs, and package build): ``tox``.
 * Run an individual environment with ``tox -e {env}``:
@@ -214,4 +214,4 @@ Builds, tests, and lets you view the [Sphinx](https://www.sphinx-doc.org/) docum
     * ``make html``.
     * View the docs in your browser: ``open docs/_build/html/index.html``.
 
-The docs are automatically built and deployed to https://ssec-jhu.github.io/autoRA-gui.
+The docs are automatically built and deployed to https://autoresearch.github.io/autoRA-gui.
